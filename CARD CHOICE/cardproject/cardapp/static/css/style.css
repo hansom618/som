@@ -1,0 +1,871 @@
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+body {
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #f3f6ff;
+}
+
+a {
+    color: #2c3e50;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #353535;
+    outline: none;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+@media(min-width: 992px) {
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+
+/**********************************/
+/********* Form Input CSS *********/
+/**********************************/
+.form-control,
+.custom-select {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #999999;
+    border: 1px solid #999999;
+    margin-bottom: 15px
+}
+
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+    border-color: #2c3e50;
+}
+
+.btn {
+    color: #e0e0e0;
+    background: #16a082;
+    border: 1px solid #16a082;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    color: #e0e0e0;
+    background: #16a082;
+    box-shadow: none;
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.nav {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .nav .container-fluid {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+}
+
+.nav .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .nav,
+    .nav .navbar {
+        background: #2c3e50 !important;
+    }
+
+    .nav .navbar-dark a.nav-link:hover,
+    .nav .navbar-dark a.nav-link.active {
+        color: #16a082;
+        font-size: 38px;
+        margin: 0 auto;
+    }
+}
+
+/**********************************/
+/*********** Header CSS ***********/
+/**********************************/
+.header {
+    position: relative;
+}
+
+.header .col-md-3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header .col-md-5 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.header .col-md-4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header .search {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.header .search input[type=text] {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    color: #666666;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+}
+
+.header .search button {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 1px;
+    right: 17px;
+    padding: 0 15px;
+    border: none;
+    background: none;
+    color: #2c3e50;
+    border-radius: 0 2px 2px 0;
+    margin-top: 60px;
+}
+
+.header .navbar {
+    padding: 0 10px;
+    height: 100%;
+    max-height: 550px;
+    border-radius: 20px;
+    background: #2c3e50 !important;
+}
+.header .navbar1 {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #2c3e50 !important;
+    padding: 5px 20px;
+}
+
+.header .navbar-nav {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header .navbar li {
+    padding: 0 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header .navbar li:last-child {
+    border-bottom: none;
+}
+
+.header .navbar a {
+    color: #16a082;
+    font-size: 19px;
+}
+.header .navbar1 a {
+    color: #16a082;
+    font-size:  19px;
+}
+
+.header .login {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    background: #2c3e50;
+    border-radius: 10px;
+}
+
+.header .input-group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header .header-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header .header-item img {
+    width: 100%; 
+    height: 100%;
+}
+
+.header .img-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(44, 62, 80, .7);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.header .img-text:hover {
+    opacity: 1;     
+}
+
+.header .img-text p {
+    margin: 0 0 50px 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.header .img-text:hover p {
+    margin: 0;       
+}
+
+/**********************************/
+/******** Product Item CSS ********/
+/**********************************/
+.product-item {
+    position: relative;
+}
+
+.product-item .product-title {
+    padding: 15px;
+    text-align: center;
+    background: #2c3e50;
+    transition: all .3s;
+}
+
+.product-item:hover .product-title {
+    background: #2c3e50;
+}
+
+.product-item .product-title a {
+    position: relative;
+    width: 100%;
+}
+
+.product-item .product-title a {
+    margin-bottom: 5px;
+    color: #16a082;
+    font-size: 20px;
+}
+
+.product-item:hover .product-title a {
+    color: #16a082;
+}
+
+.product-item .product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item .product-image a {
+    display: block;
+    background: #2c3e50;
+    transition: .3s;
+}
+
+.product-item .product-image img {
+    width: 100%; 
+    transition: all .3s;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.2);
+}
+
+.product-item .product-image .product-action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(44, 62, 80, .5);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.product-item:hover .product-image .product-action {
+    opacity: 1; 
+}
+
+.product-item .product-image .product-action a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 7px 0 10px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #16a082;
+    background: #2c3e50;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all .3s;
+    margin-top: 50px;
+}
+
+.product-item:hover .product-image .product-action a {
+    margin-top: 0;
+}
+
+.product-item .product-image .product-action a:last-child {
+    margin-right: 0;
+}
+
+.product-item .product-image .product-action a:hover {
+    color: #2c3e50;
+    background: #ffffff;
+    border: 1px solid #2c3e50;
+}
+
+.product-item .product-name {
+    padding: 15px;
+    background: #2c3e50;
+    text-align: center;
+    transition: all .3s;
+}
+
+.product-item:hover .product-name {
+    background: #2c3e50;
+}
+
+.product-item .product-name a {
+    position: relative;
+    width: 100%;;
+}
+
+.product-item .product-name a {
+    margin-bottom: 5px;
+    color: #16a082;
+    font-size: 20px;
+}
+
+.product-item .product-name a {
+    color: #16a082;
+}
+
+
+/**********************************/
+/******** Featured Product ********/
+/**********************************/
+.featured-product {
+    position: relative;
+    padding: 30px 0;
+}
+
+.product .section-header {
+    margin-bottom: 30px;
+    padding: 20px 30px 15px 30px;
+    color: #16a082;
+    background: #2c3e50;
+    border-radius: 10px;
+}
+
+
+/**********************************/
+/******** Product View CSS ********/
+/**********************************/
+.product-view {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.product-view .product-view-top {
+    padding: 30px;
+    margin-bottom: 30px;
+    background: #ffffff;
+}
+
+.product-view .product-search {
+    position: relative;
+    width: 100%;
+}
+
+.product-view .product-search input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #999999;
+    background: transparent;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.product-view .product-search input:focus {
+    border-color: #2c3e50;
+}
+
+.product-view .product-search button {
+    position: absolute;
+    width: 35px;
+    height: 33px;
+    top: 1px;
+    right: 1px;
+    text-align: center;
+    background: transparent;
+    color: #2c3e50;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    transition: all .3s;
+}
+
+.product-view .product-search button i {
+    font-size: 16px;
+}
+
+.product-view .product-search button:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+.product-view .product-short,
+.product-view .product-name-range {
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+.product-view .product-short .dropdown .dropdown-toggle,
+.product-view .product-name-range .dropdown .dropdown-toggle {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #2c3e50;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.product-view .product-short .dropdown .dropdown-toggle:hover,
+.product-view .product-name-range .dropdown .dropdown-toggle:hover {
+    color: #2c3e50;
+    border-color: #2c3e50;
+}
+
+.product-view .product-short .dropdown .dropdown-toggle::after,
+.product-view .product-name-range .dropdown .dropdown-toggle::after {
+    float: right;
+    margin-top: 10px;
+}
+
+.product-view .product-short .dropdown-menu,
+.product-view .product-name-range .dropdown-menu {
+    margin: -1px 0 0 0;
+    border-radius: 0;
+}
+
+.product-view .product-item {
+    margin-bottom: 30px;
+}
+
+.product-view .pagination {
+    margin: 0;
+}
+
+.product-view .pagination .page-item .page-link {
+    color: #2c3e50;
+    background: transparent;
+    border-color: #2c3e50;
+}
+
+.product-view .pagination .page-item:hover .page-link,
+.product-view .pagination .page-item.active .page-link {
+    color: #2c3e50;
+    background: #2c3e50;
+}
+
+@media (max-width: 991.98px) {
+    .product-view .pagination {
+        margin-bottom: 30px;
+    }
+}
+
+
+/**********************************/
+/******* Product Detail CSS *******/
+/**********************************/
+.card-detail {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.card-detail .card-detail-top,
+.card-detail .card-detail-bottom {
+    margin-bottom: 30px;
+}
+
+.card-detail .card-detail-top {
+    padding: 0;
+    background: #ffffff;
+}
+
+.card-detail .product-slider-single img {
+    width: 100%;
+}
+
+.card-detail .product-slider-single-nav {
+    margin: 15px 30px 30px 30px;
+    border: 3px double #2c3e50;
+}
+
+.card-detail .product-slider-single-nav .slider-nav-img {
+    border-right: 1px solid #2c3e50;
+    overflow: hidden;
+}
+
+.card-detail .product-slider-single-nav img {
+    width: 100%;
+    transition: all .3s;
+}
+
+.card-detail .product-slider-single-nav img:hover {
+    transform: scale(1.2);
+}
+
+.card-detail .product-content,
+.card-detail .product-content .title,
+.card-detail .product-content .price,
+.card-detail .product-content .details,
+.card-detail .product-content .quantity,
+.card-detail .product-content .action {
+    position: relative;
+    width: 100%;
+}
+
+.card-detail .product-content {
+    padding: 30px;
+}
+
+@media (min-width: 768px) {
+    .card-detail .product-content {
+        padding-left: 0;
+    }
+}
+
+.card-detail .product-content .title h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.card-detail .product-content .price,
+.card-detail .product-content .quantity,
+.card-detail .product-content .p-size,
+.card-detail .product-content .p-color {
+    margin-bottom: 15px;
+}
+
+.card-detail .product-content .price h4,
+.card-detail .product-content .quantity h4,
+.card-detail .product-content .p-size h4,
+.card-detail .product-content .p-color h4 {
+    display: inline-block;
+    width: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.card-detail .product-content .price p {
+    display: inline-block;
+    color: #2c3e50;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-detail .product-content .price span {
+    color: #999999;
+    text-decoration: line-through;
+    margin-left: 12px;
+}
+
+.card-detail .product-content .quantity .qty {
+    display: inline-block;
+    font-size: 0;
+}
+
+.card-detail .product-content .quantity button {
+    width: 30px;
+    height: 30px;
+    padding: 2px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background: #2c3e50;
+    border: none;
+}
+
+.card-detail .product-content .quantity button.btn-minus {
+    border-radius: 4px 0 0 4px;
+}
+
+.card-detail .product-content .quantity button.btn-plus {
+    border-radius: 0 4px 4px 0;
+}
+
+.card-detail .product-content .quantity input {
+    width: 40px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    background: #2c3e50;
+    border: none;
+}
+
+.card-detail .product-content .action a:first-child {
+    margin-right: 11px;
+}
+
+.card-detail .product-content .action a i {
+    margin-right: 5px;
+}
+
+.card-detail .nav.nav-pills .nav-link {
+    color: #2c3e50;
+    background: #2c3e50;
+    border-radius: 0;
+    transition: all .3s;
+}
+
+.card-detail .nav.nav-pills .nav-link:hover,
+.card-detail .nav.nav-pills .nav-link.active {
+    color: #2c3e50;
+    background: #2c3e50;
+}
+
+.card-detail .tab-content {
+    background: #ffffff;
+    padding: 25px 15px 15px 15px;
+}
+
+.card-detail .tab-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card-detail .tab-content ul li {
+    margin-bottom: 10px;
+}
+
+.card-detail .tab-content ul li::before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+.card-detail .tab-content .reviews-submitted {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.card-detail .tab-content .reviewer {
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-detail .tab-content .reviewer span {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-detail .tab-content .form input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #666666;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.card-detail .tab-content .form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 6px 15px;
+    color: #666666;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.card-detail .tab-content .form button {
+    display: inline-block;
+    height: 35px;
+    padding: 0 15px;
+    color: #2c3e50;
+    background: #ffffff;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+
+.card-detail .tab-content .form button:hover {
+    color: #ffffff;
+    background: #2c3e50;
+}
+
+/**********************************/
+/*********** Brand CSS ************/
+/**********************************/
+.brand {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    background: #ffffff;
+}
+
+.brand .cardcompany {
+    text-align: left; 
+}
+
+.brand .cardcompany img {
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+
+.brand .img-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(44, 62, 80, .7);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.brand .img-text:hover {
+    opacity: 1;     
+}
+.brand .img-text p {
+    margin: 0 0 50px 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.brand .slick-prev,
+.brand .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+    background: #2c3e50;
+    border-radius: 4px;
+}
+
+.brand .slick-prev {
+    left: 55px;
+}
+
+.brand .slick-next {
+    right: 55px;
+}
+
+.brand .slick-slider:hover .slick-prev {
+    left: 15px;
+    opacity: 1;
+}
+
+.brand .slick-slider:hover .slick-next {
+    right: 15px;
+    opacity: 1;
+}
+
+.brand .slick-prev:hover,
+.brand .slick-prev:focus,
+.brand .slick-next:hover,
+.brand .slick-next:focus {
+    background: #2c3e50;
+}
+
+.brand .slick-prev:hover::before,
+.brand .slick-prev:focus::before,
+.brand .slick-next:hover::before,
+.brand .slick-next:focus::before {
+    color: #2c3e50;
+}
+
+.brand .slick-prev::before,
+.brand .slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+.brand .slick-prev::before {
+    content: "\f104";
+}
+
+.brand .slick-next::before {
+    content: "\f105";
+}
+
+
+/**********************************/
+/****** Register & Login CSS ******/
+/**********************************/
+.login {
+    position: relative;
+    padding-top: 30px;
+}
+
+.login .login-form,
+.login .register-form {
+    padding: 0;
+    background: #2c3e50;
+    margin-bottom: 0;
+}

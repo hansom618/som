@@ -1,4 +1,4 @@
-"""cardproject URL Configuration
+"""cardchoice URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -14,11 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-import cardapp.views
+from django.urls import path
+import card.views
+from django.conf.urls import url, include
+from django.shortcuts import redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', cardapp.views.index, name='index'),
-    path('new/', cardapp.views.new, name='new'),
+    path('', card.views.index, name='index'),
+    path('new/', card.views.new, name='new'),
+    path('compare1/', card.views.compare1, name='compare1'),
+    path('compare2/', card.views.compare2, name='compare2'),
 ]

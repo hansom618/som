@@ -1,0 +1,322 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>CARD CHOICE - 카드 비교하기(신용)</title>
+        <meta content="=카드 비교하기">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/compare.css">
+
+    </head> 
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active text-center">CARD CHOICE</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+    <body>
+        <!-- main start -->
+        <div class="main">
+            <div class="section-top">
+                <h1 class="headline text-center max-width">신용 CARD 비교하기</h1>
+                <div class="top-txt">
+                    <div class="headline-intro text-center max-width">어떤 카드를 선택할지 고민된다면? 비교해보세요.</div>
+                </div>
+            </div>
+            <div class="section-middle">
+                <div class="row">
+                    <div class="col-md-4">
+                        <select class="selector-dropdown" id="select-one">
+                            <optgroup label="신한카드">
+                                <option value="신한카드Mr.Life">신한카드 Mr.Life</option>
+                                <option value="신한카드DeepDreamPlatinum+">신한카드 Deep Dream Platinum+</option>
+                                <option value="신한카드 O2O">신한 S-Choice 체크</option>
+                                <option value="신한카드DeepMaking">신한카드 Deep Making</option>
+                                <option value="신한카드Love">신한카드 Love</option>
+                            </optgroup>
+                            <optgroup label="우리카드">
+                                <option value="카드의정석DISCOUNT">카드의정석 DISCOUNT</option>
+                                <option value="카드의정석POINT">카드의정석 POINT</option>
+                                <option value="카드의정석SHOPPING">카드의정석 SHOPPING</option>
+                                <option value="ONLY나만의카드">ONLY 나만의카드</option>
+                                <option value="다둥이행복카드">다둥이 행복카드</option>
+                            </optgroup>
+                            <optgroup label="KB국민카드">
+                                <option value="탄탄대로Miz&Mr티타늄카드">탄탄대로 Miz&Mr 티타늄카드</option>
+                                <option value="청춘대로톡톡카드">청춘대로 톡톡카드</option>
+                                <option value="Easyall티타늄카드">Easy all 티타늄카드</option>
+                                <option value="굿데이카드">굿데이카드</option>
+                                <option value="다담카드">다담카드</option>
+                            </optgroup>
+                            <optgroup label="KEB하나카드">
+                                <option value="1QDaily+">1Q Daily+</option>
+                                <option value="통커카드">통커 카드</option>
+                                <option value="#tag1카드Navy">#tag1카드 Navy</option>
+                                <option value="#tag1카드Orange">#tag1카드 Orange</option>
+                                <option value="1QSpecial+">1Q Special+</option>
+                            </optgroup>
+                            <optgroup label="NH농협카드">
+                                <option value="NH올원파이카드">NH올원 파이카드</option>
+                                <option value="올바른FLEX카드">올바른 FLEX카드</option>
+                                <option value="올바른PORINT카드">올바른 PORINT카드</option>
+                                <option value="적립조아카드">적립조아카드</option>
+                                <option value="NH20해봄카드">NH20 해봄카드</option>
+                            </optgroup>
+                            <optgroup label="현대카드">
+                                <option value="현대카드ZERO(할인형)">현대카드ZERO(할인형)</option>
+                                <option value="현대카드M3Edition3">현대카드M3 Edition3</option>
+                                <option value="theGreen">the Green</option>
+                                <option value="스마일신용카드">스마일 신용카드</option>
+                            </optgroup>
+                            <optgroup label="IBK기업카드">
+                                <option value="일상의기쁨카드(신용)">일상의 기쁨카드(신용)</option>
+                                <option value="Oil&Life카드(Oil카드)">Oil & Life카드(Oil카드)</option>
+                                <option value="Oil&Life카드(Life카드)">Oil & Life카드(Life카드)</option>
+                                <option value="쇼핑앤조이카드">쇼핑앤조이 카드</option>
+                                <option value="일년의설렘카드">일년의설렘카드</option>
+                            </optgroup>
+                            <optgroup label="삼성카드">
+                                <option value="AmericanExpressGreen">American Express Green</option>
+                                <option value="삼성카드6V4">삼성카드6 V4</option>
+                                <option value="삼성카드4">삼성카드4</option>
+                                <option value="삼성페이카드">삼성페이카드</option>
+                                <option value="taptapO">taptap O</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="selector-dropdown" id="select-one">
+                            <optgroup label="신한카드">
+                                <option value="신한카드Mr.Life">신한카드 Mr.Life</option>
+                                <option value="신한카드DeepDreamPlatinum+">신한카드 Deep Dream Platinum+</option>
+                                <option value="신한카드 O2O">신한 S-Choice 체크</option>
+                                <option value="신한카드DeepMaking">신한카드 Deep Making</option>
+                                <option value="신한카드Love">신한카드 Love</option>
+                            </optgroup>
+                            <optgroup label="우리카드">
+                                <option value="카드의정석DISCOUNT">카드의정석 DISCOUNT</option>
+                                <option value="카드의정석POINT">카드의정석 POINT</option>
+                                <option value="카드의정석SHOPPING">카드의정석 SHOPPING</option>
+                                <option value="ONLY나만의카드">ONLY 나만의카드</option>
+                                <option value="다둥이행복카드">다둥이 행복카드</option>
+                            </optgroup>
+                            <optgroup label="KB국민카드">
+                                <option value="탄탄대로Miz&Mr티타늄카드">탄탄대로 Miz&Mr 티타늄카드</option>
+                                <option value="청춘대로톡톡카드">청춘대로 톡톡카드</option>
+                                <option value="Easyall티타늄카드"">Easy all 티타늄카드</option>
+                                <option value="굿데이카드">굿데이카드</option>
+                                <option value="다담카드">다담카드</option>
+                            </optgroup>
+                            <optgroup label="KEB하나카드">
+                                <option value="1QDaily+">1Q Daily+</option>
+                                <option value="통커카드">통커 카드</option>
+                                <option value="#tag1카드Navy">#tag1카드 Navy</option>
+                                <option value="#tag1카드Orange">#tag1카드 Orange</option>
+                                <option value="1QSpecial+">1Q Special+</option>
+                            </optgroup>
+                            <optgroup label="NH농협카드">
+                                <option value="NH올원파이카드">NH올원 파이카드</option>
+                                <option value="올바른FLEX카드">올바른 FLEX카드</option>
+                                <option value="올바른PORINT카드">올바른 PORINT카드</option>
+                                <option value="적립조아카드">적립조아카드</option>
+                                <option value="NH20해봄카드">NH20 해봄카드</option>
+                            </optgroup>
+                            <optgroup label="현대카드">
+                                <option value="현대카드ZERO(할인형)">현대카드ZERO(할인형)</option>
+                                <option value="현대카드M3Edition3">현대카드M3 Edition3</option>
+                                <option value="theGreen">the Green</option>
+                                <option value="스마일신용카드">스마일 신용카드</option>
+                            </optgroup>
+                            <optgroup label="IBK기업카드">
+                                <option value="일상의기쁨카드(신용)">일상의 기쁨카드(신용)</option>
+                                <option value="Oil&Life카드(Oil카드)">Oil & Life카드(Oil카드)</option>
+                                <option value="Oil&Life카드(Life카드)">Oil & Life카드(Life카드)</option>
+                                <option value="쇼핑앤조이카드">쇼핑앤조이 카드</option>
+                                <option value="일년의설렘카드">일년의설렘카드</option>
+                            </optgroup>
+                            <optgroup label="삼성카드">
+                                <option value="AmericanExpressGreen">American Express Green</option>
+                                <option value="삼성카드6V4">삼성카드6 V4</option>
+                                <option value="삼성카드4">삼성카드4</option>
+                                <option value="삼성페이카드">삼성페이카드</option>
+                                <option value="taptapO">taptap O</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="selector-dropdown" id="select-one">
+                            <optgroup label="신한카드">
+                                <option value="신한카드Mr.Life">신한카드 Mr.Life</option>
+                                <option value="신한카드DeepDreamPlatinum+">신한카드 Deep Dream Platinum+</option>
+                                <option value="신한카드 O2O">신한 S-Choice 체크</option>
+                                <option value="신한카드DeepMaking">신한카드 Deep Making</option>
+                                <option value="신한카드Love">신한카드 Love</option>
+                            </optgroup>
+                            <optgroup label="우리카드">
+                                <option value="카드의정석DISCOUNT">카드의정석 DISCOUNT</option>
+                                <option value="카드의정석POINT">카드의정석 POINT</option>
+                                <option value="카드의정석SHOPPING">카드의정석 SHOPPING</option>
+                                <option value="ONLY나만의카드">ONLY 나만의카드</option>
+                                <option value="다둥이행복카드">다둥이 행복카드</option>
+                            </optgroup>
+                            <optgroup label="KB국민카드">
+                                <option value="탄탄대로Miz&Mr티타늄카드">탄탄대로 Miz&Mr 티타늄카드</option>
+                                <option value="청춘대로톡톡카드">청춘대로 톡톡카드</option>
+                                <option value="Easyall티타늄카드"">Easy all 티타늄카드</option>
+                                <option value="굿데이카드">굿데이카드</option>
+                                <option value="다담카드">다담카드</option>
+                            </optgroup>
+                            <optgroup label="KEB하나카드">
+                                <option value="1QDaily+">1Q Daily+</option>
+                                <option value="통커카드">통커 카드</option>
+                                <option value="#tag1카드Navy">#tag1카드 Navy</option>
+                                <option value="#tag1카드Orange">#tag1카드 Orange</option>
+                                <option value="1QSpecial+">1Q Special+</option>
+                            </optgroup>
+                            <optgroup label="NH농협카드">
+                                <option value="NH올원파이카드">NH올원 파이카드</option>
+                                <option value="올바른FLEX카드">올바른 FLEX카드</option>
+                                <option value="올바른PORINT카드">올바른 PORINT카드</option>
+                                <option value="적립조아카드">적립조아카드</option>
+                                <option value="NH20해봄카드">NH20 해봄카드</option>
+                            </optgroup>
+                            <optgroup label="현대카드">
+                                <option value="현대카드ZERO(할인형)">현대카드ZERO(할인형)</option>
+                                <option value="현대카드M3Edition3">현대카드M3 Edition3</option>
+                                <option value="theGreen">the Green</option>
+                                <option value="스마일신용카드">스마일 신용카드</option>
+                            </optgroup>
+                            <optgroup label="IBK기업카드">
+                                <option value="일상의기쁨카드(신용)">일상의 기쁨카드(신용)</option>
+                                <option value="Oil&Life카드(Oil카드)">Oil & Life카드(Oil카드)</option>
+                                <option value="Oil&Life카드(Life카드)">Oil & Life카드(Life카드)</option>
+                                <option value="쇼핑앤조이카드">쇼핑앤조이 카드</option>
+                                <option value="일년의설렘카드">일년의설렘카드</option>
+                            </optgroup>
+                            <optgroup label="삼성카드">
+                                <option value="AmericanExpressGreen">American Express Green</option>
+                                <option value="삼성카드6V4">삼성카드6 V4</option>
+                                <option value="삼성카드4">삼성카드4</option>
+                                <option value="삼성페이카드">삼성페이카드</option>
+                                <option value="taptapO">taptap O</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-img">
+                            <img src="img/KEB하나카드-1Q Daily+.png" width="350" height="230">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-img">
+                            <img src="img/우리카드-카드의정석 DISCOUNT.png" width="360" height="230">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-img">
+                            <img src="img/IBK기업은행-일상의 기쁨카드(신용).png" width="360" height="230">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-txt">
+                <div class="card card-kind">
+                    <h4>카드종류</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>포인트형</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>할인형</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>할인형</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card card-annual-fee">
+                    <h4>연회비</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>해외겸용(10,000원)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>국내전용(10,000원)/해외겸용(12,000원)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>해외겸용(10,000원)</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card card-result">
+                    <h4>전월실적</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>없음</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>없음</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>50만원 이상</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card card-benefit">
+                    <h4>혜택</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>전월실적 없이 0.3%~1.0%하나머니 적립<br>
+                                    SK주유소 월 최대 6천원 할인<br>
+                                    스타벅스/커피빈 4천원이상 결제시 4천원 청구할인<br>
+                                    공과금 합산 10만원 이상 5천 하나머니 적립
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>모든 국내 가맹점 0.7%~1.0%청구할인<br>
+                                    S-OIL, 현대오일뱅크 리터당 60~100원 청구할인<br>
+                                    스타벅스, 폴바셋 10%청구할인<br>
+                                    Two-in-One 결제서비스<br>
+                                    대중교통 10%청구할인
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>이마트, 홈플러스, 롯데마트 5%할인<br>
+                                   전 주유소 리터당 60원 할인<br>
+                                   커피전문점 20%할인<br>
+                                   환전시 환율 70%우대
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main end -->
+    </body>

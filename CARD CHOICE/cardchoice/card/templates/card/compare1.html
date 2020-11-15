@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>CARD CHOICE - 카드 비교하기(체크)</title>
+        <meta content="=카드 비교하기">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/compare.css">
+
+    </head> 
+        <!-- Nav Bar Start -->
+        <div class="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active text-center">CARD CHOICE</a>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+    <body>
+        <!-- main start -->
+        <div class="main">
+            <div class="section-top">
+                <h1 class="headline text-center max-width">체크 CARD 비교하기</h1>
+                <div class="top-txt">
+                    <div class="headline-intro text-center max-width">어떤 카드를 선택할지 고민된다면? 비교해보세요.</div>
+                </div>
+            </div>
+            <div class="section-middle">
+                <div class="row">
+                    <div class="col-md-4">
+                        <select class="selector-dropdown" id="select-one">
+                            <optgroup label="신한카드">
+                                <option value="신한카드DeepDream체크">신한카드 Deep Dream 체크</option>
+                                <option value="네이버페이신한카드체크">네이버페이 신한카드 체크</option>
+                                <option value="신한S-Choice체크">신한 S-Choice 체크</option>
+                                <option value="신한카드DeepDream체크(미니언즈)">신한카드 Deep Dream 체크(미니언즈)</option>
+                                <option value="신한카드주거래체크">신한카드 주거래 체크</option>
+                            </optgroup>
+                            <optgroup label="우리카드">
+                                <option value="카드의정석COOKIECHECK">카드의정석 COOKIE CHECK</option>
+                                <option value="우리카카오페이체크카드">우리 카카오페이 체크카드</option>
+                                <option value="썸타는우리체크">썸타는 우리 체크</option>
+                                <option value="카드의정석POINTCHECK">카드의정석 POINT CHECK</option>
+                                <option value="롯데마트라서즐거운체크카드">롯데마트 라서즐거운 체크카드</option>
+                            </optgroup>
+                            <optgroup label="KB국민카드">
+                                <option value="해피노리체크카드">해피노리체크카드</option>
+                                <option value="쏘영체크카드">쏘영 체크카드</option>
+                                <option value="누리체크카드">누리 체크카드</option>
+                                <option value="ONE체크카드">ONE체크카드</option>
+                                <option value="가온체크카드">가온체크카드</option>
+                            </optgroup>
+                            <optgroup label="KEB하나카드">
+                                <option value="하나카카오페이체크카드">하나 카카오페이 체크카드</option>
+                                <option value="비바2플래티늄체크카드">비바2 플래티늄 체크카드</option>
+                                <option value="하나멤버스1Q체크카드">하나멤버스 1Q 체크카드</option>
+                                <option value="리틀프렌즈체크카드">리틀프렌즈 체크카드</option>                                    <option value="VIVA+체크카드">VIVA+ 체크카드</option>
+                            </optgroup>
+                            <optgroup label="NH농협카드">
+                                <option value="올바른POINT체크카드">올바른POINT체크카드</option>
+                                <option value="콕체크카드">콕체크카드</option>
+                                <option value="NEW농촌사랑체크카드">NEW농촌사랑체크카드</option>
+                                <option value="아이행복체크카드(비씨)">아이행복체크카드(비씨)</option>
+                                <option value="청년동행체크카드(비씨)">청년동행체크카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="현대카드">
+                                <option value="현대카드MHYBRID">올바른POINT체크카드</option>
+                                <option value="현대카드XHYBRID">콕체크카드</option>
+                                <option value="현대카드MCHECK">NEW농촌사랑체크카드</option>
+                                <option value="현대카드XCHECK">아이행복체크카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="IBK기업카드">
+                                <option value="하이틴즈체크카드">하이틴즈 체크카드</option>
+                                <option value="아이행복카드(체크)">아이행복카드(체크)</option>
+                                <option value="일상의기쁨카드(체크)">일상의 기쁨카드(체크)</option>
+                                <option value="참!좋은글로벌체크카드">참! 좋은 글로벌 체크카드</option>
+                                <option value="부자되세요더마일리지카드(비씨)">부자되세요 더 마일리지 카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="삼성카드">
+                                <option value="삼성체크카드&CASHBACK">삼성체크카드 & CASHBACK</option>
+                                <option value="삼성체크카드&YOUNG">삼성체크카드 & YOUNG</option>
+                                <option value="삼성체크카드&POINT">삼성체크카드 & POINT</option>
+                                <option value="국민행복삼성체크카드">국민행복 삼성체크카드</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="selector-dropdown" id="select-two">
+                            <optgroup label="신한카드">
+                                <option value="신한카드DeepDream체크">신한카드 Deep Dream 체크</option>
+                                <option value="네이버페이신한카드체크">네이버페이 신한카드 체크</option>
+                                <option value="신한S-Choice체크">신한 S-Choice 체크</option>
+                                <option value="신한카드DeepDream체크(미니언즈)">신한카드 Deep Dream 체크(미니언즈)</option>
+                                <option value="신한카드주거래체크">신한카드 주거래 체크</option>
+                            </optgroup>
+                            <optgroup label="우리카드">
+                                <option value="카드의정석COOKIECHECK">카드의정석 COOKIE CHECK</option>
+                                <option value="우리카카오페이체크카드">우리 카카오페이 체크카드</option>
+                                <option value="썸타는우리체크">썸타는 우리 체크</option>
+                                <option value="카드의정석POINTCHECK">카드의정석 POINT CHECK</option>
+                                <option value="롯데마트라서즐거운체크카드">롯데마트 라서즐거운 체크카드</option>
+                            </optgroup>
+                            <optgroup label="KB국민카드">
+                                <option value="해피노리체크카드">해피노리체크카드</option>
+                                <option value="쏘영체크카드">쏘영 체크카드</option>
+                                <option value="누리체크카드">누리 체크카드</option>
+                                <option value="ONE체크카드">ONE체크카드</option>
+                                <option value="가온체크카드">가온체크카드</option>
+                            </optgroup>
+                            <optgroup label="KEB하나카드">
+                                <option value="하나카카오페이체크카드">하나 카카오페이 체크카드</option>
+                                <option value="비바2플래티늄체크카드">비바2 플래티늄 체크카드</option>
+                                <option value="하나멤버스1Q체크카드">하나멤버스 1Q 체크카드</option>
+                                <option value="리틀프렌즈체크카드">리틀프렌즈 체크카드</option>                                    <option value="VIVA+체크카드">VIVA+ 체크카드</option>
+                            </optgroup>
+                            <optgroup label="NH농협카드">
+                                <option value="올바른POINT체크카드">올바른POINT체크카드</option>
+                                <option value="콕체크카드">콕체크카드</option>
+                                <option value="NEW농촌사랑체크카드">NEW농촌사랑체크카드</option>
+                                <option value="아이행복체크카드(비씨)">아이행복체크카드(비씨)</option>
+                                <option value="청년동행체크카드(비씨)">청년동행체크카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="현대카드">
+                                <option value="현대카드MHYBRID">올바른POINT체크카드</option>
+                                <option value="현대카드XHYBRID">콕체크카드</option>
+                                <option value="현대카드MCHECK">NEW농촌사랑체크카드</option>
+                                <option value="현대카드XCHECK">아이행복체크카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="IBK기업카드">
+                                <option value="하이틴즈체크카드">하이틴즈 체크카드</option>
+                                <option value="아이행복카드(체크)">아이행복카드(체크)</option>
+                                <option value="일상의기쁨카드(체크)">일상의 기쁨카드(체크)</option>
+                                <option value="참!좋은글로벌체크카드">참! 좋은 글로벌 체크카드</option>
+                                <option value="부자되세요더마일리지카드(비씨)">부자되세요 더 마일리지 카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="삼성카드">
+                                <option value="삼성체크카드&CASHBACK">삼성체크카드 & CASHBACK</option>
+                                <option value="삼성체크카드&YOUNG">삼성체크카드 & YOUNG</option>
+                                <option value="삼성체크카드&POINT">삼성체크카드 & POINT</option>
+                                <option value="국민행복삼성체크카드">국민행복 삼성체크카드</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="selector-dropdown" id="select-three">
+                            <optgroup label="신한카드">
+                                <option value="신한카드DeepDream체크">신한카드 Deep Dream 체크</option>
+                                <option value="네이버페이신한카드체크">네이버페이 신한카드 체크</option>
+                                <option value="신한S-Choice체크">신한 S-Choice 체크</option>
+                                <option value="신한카드DeepDream체크(미니언즈)">신한카드 Deep Dream 체크(미니언즈)</option>
+                                <option value="신한카드주거래체크">신한카드 주거래 체크</option>
+                            </optgroup>
+                            <optgroup label="우리카드">
+                                <option value="카드의정석COOKIECHECK">카드의정석 COOKIE CHECK</option>
+                                <option value="우리카카오페이체크카드">우리 카카오페이 체크카드</option>
+                                <option value="썸타는우리체크">썸타는 우리 체크</option>
+                                <option value="카드의정석POINTCHECK">카드의정석 POINT CHECK</option>
+                                <option value="롯데마트라서즐거운체크카드">롯데마트 라서즐거운 체크카드</option>
+                            </optgroup>
+                            <optgroup label="KB국민카드">
+                                <option value="해피노리체크카드">해피노리체크카드</option>
+                                <option value="쏘영체크카드">쏘영 체크카드</option>
+                                <option value="누리체크카드">누리 체크카드</option>
+                                <option value="ONE체크카드">ONE체크카드</option>
+                                <option value="가온체크카드">가온체크카드</option>
+                            </optgroup>
+                            <optgroup label="KEB하나카드">
+                                <option value="하나카카오페이체크카드">하나 카카오페이 체크카드</option>
+                                <option value="비바2플래티늄체크카드">비바2 플래티늄 체크카드</option>
+                                <option value="하나멤버스1Q체크카드">하나멤버스 1Q 체크카드</option>
+                                <option value="리틀프렌즈체크카드">리틀프렌즈 체크카드</option>                                    <option value="VIVA+체크카드">VIVA+ 체크카드</option>
+                            </optgroup>
+                            <optgroup label="NH농협카드">
+                                <option value="올바른POINT체크카드">올바른POINT체크카드</option>
+                                <option value="콕체크카드">콕체크카드</option>
+                                <option value="NEW농촌사랑체크카드">NEW농촌사랑체크카드</option>
+                                <option value="아이행복체크카드(비씨)">아이행복체크카드(비씨)</option>
+                                <option value="청년동행체크카드(비씨)">청년동행체크카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="현대카드">
+                                <option value="현대카드MHYBRID">올바른POINT체크카드</option>
+                                <option value="현대카드XHYBRID">콕체크카드</option>
+                                <option value="현대카드MCHECK">NEW농촌사랑체크카드</option>
+                                <option value="현대카드XCHECK">아이행복체크카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="IBK기업카드">
+                                <option value="하이틴즈체크카드">하이틴즈 체크카드</option>
+                                <option value="아이행복카드(체크)">아이행복카드(체크)</option>
+                                <option value="일상의기쁨카드(체크)">일상의 기쁨카드(체크)</option>
+                                <option value="참!좋은글로벌체크카드">참! 좋은 글로벌 체크카드</option>
+                                <option value="부자되세요더마일리지카드(비씨)">부자되세요 더 마일리지 카드(비씨)</option>
+                            </optgroup>
+                            <optgroup label="삼성카드">
+                                <option value="삼성체크카드&CASHBACK">삼성체크카드 & CASHBACK</option>
+                                <option value="삼성체크카드&YOUNG">삼성체크카드 & YOUNG</option>
+                                <option value="삼성체크카드&POINT">삼성체크카드 & POINT</option>
+                                <option value="국민행복삼성체크카드">국민행복 삼성체크카드</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-img">
+                            <img src="img/신한카드-Deep Dream.png" width="350" height="230">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-img">
+                            <img src="img/KEB하나카드-카카오페이 체크카드.png" width="360" height="230">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-img">
+                            <img src="img/삼성카드-삼성체크카드&CASHBACK.png" width="360" height="230">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-txt">
+                <div class="card card-kind">
+                    <h4>카드종류</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>포인트형</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>할인형</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>할인형</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card card-annual-fee">
+                    <h4>연회비</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>해외겸용(없음)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>해외겸용(없음)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>국내전용(없음)</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card card-result">
+                    <h4>전월실적</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>없음</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>25만원 이상</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>없음</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card card-benefit">
+                    <h4>혜택</h4>
+                </div>
+                    <div class="txt-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>기본 포인트 적립<br>
+                                    주유소 적립<br>
+                                    택시 할인
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>카카오페이 캐시백<br>
+                                    통신요금자동이체 캐시백<br>
+                                    커피 캐시백<br>
+                                    대중교통 캐시백<br>
+                                    카드플레이트 디자인 선택 가능
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>모든가맹점 0.2%~0.6%캐시백<br>
+                                   CGV 3,000원 할인<br>
+                                   놀이공원 자유이용권50%<br>
+                                   워터파크 입장권 30%
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main end -->
+    </body>

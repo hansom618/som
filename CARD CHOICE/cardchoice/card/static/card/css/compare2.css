@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #f5f6f7;
+}
+
+
+/* Nav Bar */
+.nav {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .nav .container-fluid {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+}
+
+.nav .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .nav,
+    .nav .navbar {
+        background: #2c3e50 !important;
+    }
+
+    .nav .navbar-dark a.nav-link:hover,
+    .nav .navbar-dark a.nav-link.active {
+        color: #16a082;
+        font-size: 38px;
+        margin: 0 auto;
+    }
+}
+
+/* main */
+.main {
+    margin-top: 80px;
+}
+
+.headline-intro {
+    margin-bottom: 60px;
+}
+
+.section-middle,
+.section-bottom,
+.section-txt {
+    margin-left:300px;
+    margin-right: 300px;
+}
+
+.selector-dropdown {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.section-bottom {
+    margin-bottom: 30px;
+}
+
+.card-kind, .card-annual-fee,
+.card-result, .card-benefit {
+    padding: 8px 500px;
+    color: #16a082;
+    background: #2c3e50;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.txt-box {
+    color: #000000;
+    background: #f4f4f4;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.txt-box .p {
+    font-size: 15px;
+}

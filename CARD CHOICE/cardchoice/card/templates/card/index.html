@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -10,8 +11,7 @@
         <link href="lib/slick/slick.css" rel="stylesheet">
         <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'card/css/style.css' %}">
     </head> 
         <!-- Nav Bar Start -->
         <div class="nav">
@@ -81,14 +81,22 @@
                                     </button>
                                 </div>
                             </scan>
-                            <scan class="col-md-3">
+                            <span class="col-md-3">
                                 <div class="navbar1 navbar-expand-md bg-dark navbar-dark">
-                                    <a href="compare.html" class="navbar-brand">COMPARE</a>
+                                    <a href="compare1.html" class="navbar-brand">COMPARE(체크)</a>
                                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                                         <span class="navbar-toggler-icon"></span>
                                     </button>
                                 </div>
-                            </scan>
+                            </span>
+                            <span class="col-md-3">
+                                <div class="navbar1 navbar-expand-md bg-dark navbar-dark">
+                                    <a href="compare2.html" class="navbar-brand">COMPARE(신용)</a>
+                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </span>
                             <scan class="col-md-3">
                                 <div class="navbar1 navbar-expand-md bg-dark navbar-dark">
                                     <a href="top10.html" class="navbar-brand">TOP10</a>
@@ -100,18 +108,19 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="login">
-                            <form accept-charset="UTF-8" role="form" method="post" action="">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input type="text" id="userid" value='' placeholder="E-mail을 입력하세요" class="form-control" />
-                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                    <input type="password" id="password" value='' placeholder="비밀번호를 입력하세요" class="form-control" />
-                                    <scan><button type="submit" id="login-submit" class="btn btn-default btn-block">로그인</button></scan>
-                                </div>
-                            
+                        <div class="three">
+                            <div class="login">
+                                <form accept-charset="UTF-8" role="form" method="post" action="">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" id="userid" value='' placeholder="E-mail을 입력하세요" class="form-control"/>
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <input type="password" id="password" value='' placeholder="비밀번호를 입력하세요" class="form-control" />
+                                    </div>
+                                    <button type="submit" id="login-submit" class="btn btn-default btn-block">로그인</button>
                                     <a href="new.html" class="btn btn-default btn-block"> 회원가입</a>
-                            </form>
+                                </form>
+                            </div>
                             <div class="header-item">
                                 <img src="img/신한카드-MrLife.png" width="200" height="127">
                                 <a class="img-text" href=""><p>이달의 1위 카드입니다.</p></a>
@@ -125,16 +134,14 @@
         
         <!-- Brand Start -->
         <div class="brand">
-            <ul class="bannerbox">
-                <scan><img src="img/우리카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>WOORI CARD</p></a></scan>
-                <scan><img src="img/신한카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>SHINHAN CARD</p></a></scan>
-                <scan><img src="img/KB국민카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>KB KOOKMIN CARD</p></a></scan>
-                <scan><img src="img/KEB하나카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>KEB HANA CARD</p></a></scan>
-                <scan><img src="img/NH농협카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>NH NONGHYUP CARD</p></a></scan>
-                <scan><img src="img/현대카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>HYUNDAI CARD</p></a></scan>
-                <scan><img src="img/IBK기업은행-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>IBK기업 CARD</p></a></scan>
-                <scan><img src="img/삼성카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>WOORI CARD</p></a></scan>
-            </ul>
+            <span><img src="img/우리카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>WOORI CARD</p></a></span>
+            <span><img src="img/신한카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>SHINHAN CARD</p></a></span>
+            <span><img src="img/KB국민카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>KB KOOKMIN CARD</p></a></span>
+            <span><img src="img/KEB하나카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>KEB HANA CARD</p></a></span>
+            <span><img src="img/NH농협카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>NH NONGHYUP CARD</p></a></span>
+            <span><img src="img/현대카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>HYUNDAI CARD</p></a></span>
+            <span><img src="img/IBK기업은행-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>IBK기업 CARD</p></a></span>
+            <span><img src="img/삼성카드-logo.png" width="200" height="127" alt="dw"><a class="img-text" href=""><p>WOORI CARD</p></a></span>
         </div>
         <!-- Brand End -->      
 
@@ -144,7 +151,7 @@
                 <div class="section-header">
                     <h2>Recommendation Card</h2>
                 </div>
-                <div class="row align-items-center product-slider product-slider-4">
+                <div class="row">
                     <div class="col-lg-3">
                         <div class="product-item">
                             <div class="product-title">
